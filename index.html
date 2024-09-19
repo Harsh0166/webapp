@@ -5,25 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="login_signup_box">
-        <div class="login_box">
+    <div class="login_signup_box" id="log_sign_box">
+        <div class="login_box animate__animated animate__flipInY" id="login_pg">
             <h1>LOGIN</h1>
             <form action="">
                 <input type="text" name="username" placeholder="username" ><br>
-                <input type="password" name="password" placeholder="password"><br>
-                <button>Submit</button>
+                <input type="password" name="password" placeholder="password" id="pass">
+                <i class="fa-solid fa-eye shows" id="show"></i><i class="fa-solid fa-eye-slash hides" id="hide"></i><br>
+                <button >Submit</button>
             </form>
-          Don't have an account <a href="">signup here</a>
+            <br>
+          <div class="login_text">Don't have an account? &nbsp;<p id="sign_click">Sign Up</p></div><br>
+            <button><i class="fa-brands fa-google"></i> Sign In</button>
+          
         </div>
-        <div class="signup_box">
+        <div class="signup_box animate__animated animate__flipInY" id="signup_pg">
+            <h1>SIGN UP</h1>
             <form action="">
                 <input type="text" name="username" placeholder="username" ><br>
-                <input type="password" name="password" placeholder="password"><br>
-                <button>Submit</button>
+                <input type="email" name="email" placeholder="email" ><br>
+                <input type="password" name="password" placeholder="password" id="pass">
+                <i class="fa-solid fa-eye shows" id="show"></i><i class="fa-solid fa-eye-slash hides" id="hide"></i>
+                <input type="number" name="phone" placeholder="phone" ><br>
+                <button >Submit</button>
             </form>
+            <br>
+          <div class="login_text">Don't have an account? &nbsp;<p id="login_click">Login</p></div><br>
+            <button><i class="fa-brands fa-google"></i>  Sign In</button>
+          
         </div>
     </div>
+   <script src="script.js"></script>
 </body>
 </html>
