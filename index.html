@@ -28,20 +28,22 @@
         </div>
         <div class="signup_box animate__animated animate__flipInY" id="signup_pg">
             <h1>SIGN UP</h1>
-            <form action="">
-                <input type="text" name="username" placeholder="username" ><br>
-                <input type="email" name="email" placeholder="email" ><br>
-                <input type="password" name="password" placeholder="password" id="pass">
-                <i class="fa-solid fa-eye shows" id="show"></i><i class="fa-solid fa-eye-slash hides" id="hide"></i>
-                <input type="number" name="phone" placeholder="phone" ><br>
+            <form action="" id="signup_form">
+                <input type="text" name="username" placeholder="username" id="name" required><br>
+                <input type="email" name="email" placeholder="email" id="email" required><br>
+                <input type="password" name="password" placeholder="password" id="passs" required>
+                <i class="fa-solid fa-eye shows" id="show"></i>
+                <i class="fa-solid fa-eye-slash hides" id="hide"></i>
+                <input type="number" name="phone" placeholder="phone" id="phone" required><br>
                 <button >Submit</button>
             </form>
             <br>
-          <div class="login_text">Don't have an account? &nbsp;<p id="login_click">Login</p></div><br>
+          <div class="login_text">Already have an account? &nbsp;<p id="login_click">Login</p></div><br>
             <button><i class="fa-brands fa-google"></i>  Sign In</button>
           
         </div>
     </div>
    <script src="script.js"></script>
+   <script src="storedata.js"></script>
 </body>
 </html>
