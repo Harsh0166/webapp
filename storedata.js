@@ -1,5 +1,6 @@
 
 var signup_form = document.getElementById("signup_form");
+var sub_btn = document.getElementById("sub_btn");
 
 signup_form.onclick=function(){
     var names = document.getElementById("name").value;
@@ -11,6 +12,24 @@ signup_form.onclick=function(){
 
     if(names != "" && email != "" && pass !="" && phone != ""){
         localStorage.setItem(email,user_text_data);
+        return false;
     }
+}
+
+sub_btn.onclick = function(){
+    sub_btn.style.backgroundColor="#29A61A";
+    sub_btn.style.color="white";
+    sub_btn.innerHTML="<i class='fa-solid fa-circle-check'></i> Submitted"
+
+    setTimeout(
+        function(){
+            sub_btn.style.backgroundColor="#F8F8F8";
+            sub_btn.style.color="black";
+            sub_btn.innerHTML="Submit";
+            signup_form.reset();
+        },
+        3000
+    )
+
 }
 

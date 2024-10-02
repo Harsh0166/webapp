@@ -30,16 +30,17 @@
             <h1>SIGN UP</h1>
             <form action="" id="signup_form">
                 <input type="text" name="username" placeholder="username" id="name" required><br>
-                <input type="email" name="email" placeholder="email" id="email" required><br>
+                <input type="email" name="email" placeholder="email" id="email" required>
+                <small id="warn"><i class="fa-solid fa-triangle-exclamation"></i> Email Already Exists</small>
                 <input type="password" name="password" placeholder="password" id="passs" required>
                 <i class="fa-solid fa-eye shows" id="show"></i>
                 <i class="fa-solid fa-eye-slash hides" id="hide"></i>
                 <input type="number" name="phone" placeholder="phone" id="phone" required><br>
-                <button >Submit</button>
+                <button id="sub_btn">Submit</button>
             </form>
             <br>
           <div class="login_text">Already have an account? &nbsp;<p id="login_click">Login</p></div><br>
-            <button><i class="fa-brands fa-google"></i>  Sign In</button>
+            <button ><i class="fa-brands fa-google"></i>  Sign In</button>
           
         </div>
     </div>
