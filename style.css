@@ -87,3 +87,6 @@ button{
     display: none;
     color: red;
 }
+#log_warn,#log_warns{
+    color: red;
+}

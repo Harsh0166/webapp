@@ -15,9 +15,11 @@
     <div class="login_signup_box" id="log_sign_box">
         <div class="login_box animate__animated animate__flipInY" id="login_pg">
             <h1>LOGIN</h1>
-            <form >
-                <input type="text" name="username" placeholder="username" ><br>
-                <input type="password" name="password" placeholder="password" id="pass">
+            <form id="login_form">
+                <input type="email" name="email" placeholder="email" id="log_email">
+                <small id="log_warn"></small>
+                <input type="password" name="password" placeholder="password" id="log_pass">
+                <small id="log_warns"></small>
                 <i class="fa-solid fa-eye shows" id="show"></i><i class="fa-solid fa-eye-slash hides" id="hide"></i><br>
                 <button >Submit</button>
             </form>

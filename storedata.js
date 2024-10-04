@@ -1,4 +1,6 @@
 
+// signup process 
+
 var signup_form = document.getElementById("signup_form");
 var sub_btn = document.getElementById("sub_btn");
 var warnning = document.getElementById("warn");
@@ -29,11 +31,10 @@ signup_form.onsubmit=function(){
         )
         return false;
     }
-    // else{
-    //     sub_btn.disabled = true;
-        
-    // }
+
 }
+
+// email process 
 
 
 var email_input = document.getElementById("email");
@@ -53,3 +54,34 @@ email_input.onchange = function(){
 }
 
 
+
+// login process 
+
+var login_form = document.getElementById("login_form");
+var log_warn = document.getElementById("log_warn");
+var log_warns = document.getElementById("log_warns");
+
+login_form.onsubmit= function(){
+var log_email = document.getElementById("log_email").value;
+var log_pass = document.getElementById("log_pass").value;
+
+    if(localStorage.getItem(log_email) == null ){
+        log_warn.innerHTML="<i class='fa-solid fa-triangle-exclamation'></i> email not found";
+    }
+    else{
+        var text_data = localStorage.getItem(log_email);
+        var object_data = JSON.parse(text_data);
+        var correct_email = object_data.email;
+        var correct_pass = object_data.password;
+
+        if(log_email == correct_email){
+            if(log_pass == correct_pass){
+                alert("login successfully");
+            }
+            else{[
+                log_warns.innerHTML = "<i class='fa-solid fa-triangle-exclamation'></i> wrong password";
+            ]}
+        }
+    }
+    
+}
