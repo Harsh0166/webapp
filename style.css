@@ -83,3 +83,7 @@ button{
 #hide{
     display: none; 
 }
+#warn{
+    display: none;
+    color: red;
+}
