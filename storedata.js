@@ -78,9 +78,9 @@ var log_pass = document.getElementById("log_pass").value;
             if(log_pass == correct_pass){
                 alert("login successfully");
             }
-            else{[
-                log_warns.innerHTML = "<i class='fa-solid fa-triangle-exclamation'></i> wrong password";
-            ]}
+            else{
+                log_warns.innerHTML = "<i class='fa-solid fa-triangle-exclamation'></i> wrong password" ;
+            }
         }
     }
     
