@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile_box{
+    /* border: 2px solid; */
+    width: 350px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 10px black;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#profile_pic{
+    width: 200px;
+    height: 200px;
+    border: 5px solid white;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px 5px #ccc;
+}
+.pic{
+    position: absolute;
+    font-size: 150px;
+    top: 25%;
+    left: 16%;
+    color: #ccc;
+}
+#upload{
+    position: absolute;
+    width: 187px;
+    height: 187px;
+    /* border: red 2px solid; */
+    border-radius: 50%;
+    top: 5px;
+    left:5px;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+.profile_text{
+    color: #ccc;
+    margin: 15px 0 5px 0;
+    font: 400 30px ubuntu;
+}
+#profile_name{
+    
+    font: 500 30px ubuntu; 
+}
