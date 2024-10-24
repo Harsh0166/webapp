@@ -8,13 +8,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div id="profile_box">
-        <div id="profile_pic">
-            <input type="file" id="upload" accept="image/* ">
-            <i class="fa-solid fa-user pic"></i>
+    
+<div id="container">
+    <div id="box"></div>
+        <div id="profile_box">
+            <div id="profile_pic">
+                <input type="file" id="upload" accept="image/* ">
+                <i class="fa-solid fa-user pic" id="icon"></i>
+            </div>
+            <p class="profile_text">Upload Profile Pic</p>
+            <p id="profile_name"></p>
+            <button id="next_btn">Next <i class="fa-solid fa-circle-right "></i></button>
         </div>
-        <p class="profile_text">Upload Profile Pic</p>
-        <p id="profile_name">Harsh Kumar</p>
     </div>
+</div>
+    <div id="main_profile_page">
+        <div id="header">
+            <div id="profile_picture"></div>
+        </div>
+        <div class="name">
+            <p id="profile_names"></p>
+
+        </div>
+        <section>
+            <div id="contact"><i class="fa-solid fa-address-book icons"></i> Contact</div>
+            <div id="video"><i class="fa-regular fa-circle-play icons"></i> Video</div>
+            <div id="logout"><i class="fa-solid fa-right-from-bracket icons"></i> Logout</div>
+        </section>
+        <footer>
+            <p style="font: 500 20px ubuntu; color: white; text-align: center;">Develop By Harsh</p>
+        </footer>
+    </div>
+
+    <script src="../js/profile.js"></script>
 </body>
 </html>

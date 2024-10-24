@@ -76,7 +76,8 @@ var log_pass = btoa(document.getElementById("log_pass").value);
 
         if(log_email == correct_email){
             if(log_pass == correct_pass){
-                alert("login successfully");
+                sessionStorage.setItem("user",log_email);
+                location.replace("assets/html/profile.html");
             }
             else{
                 log_warns.innerHTML = "<i class='fa-solid fa-triangle-exclamation'></i> wrong password" ;
