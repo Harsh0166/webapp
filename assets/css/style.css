@@ -9,7 +9,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#F8F8F8;
+    /* background-color:#F8F8F8; */
+    background-color:#D3C5E5;
 }
 .login_signup_box{
     width: 400px;
@@ -21,6 +22,7 @@ body{
     box-shadow: 5px 5px 10px black;
     background-color: white;
     border-radius: 5px;
+    
 }
 .login_box{
     display: flex;
@@ -28,6 +30,7 @@ body{
     width: 90%;
     align-items: center;
     justify-items: center;
+    background-color: white;
 }
 .login_text{
     display: flex;
@@ -37,11 +40,15 @@ h1{
 }
 input{
     border: 0;
-    border-bottom: 2px solid;
+    border-bottom: 2px solid black;
     font-size: 1.3rem;
     margin: 10px;
     padding: 10px;
     outline: none;
+    background-color: white;
+}
+input::placeholder{
+    color: black;
 }
 form{
     display: flex;
@@ -53,6 +60,9 @@ form button{
     font-size: 1.3rem;
     padding: 5px;
     width: 60%;
+    background-color: #735DA5;
+    outline: none;
+    color: white;
 }
 #sign_click,#login_click{
     text-decoration: none;
@@ -72,6 +82,8 @@ button{
     border-radius: 2rem;
     font-weight: 600;
     cursor: pointer;
+    background-color: #735DA5;
+    color: white;
 }
 .shows,.hides{
     position: absolute;
@@ -85,8 +97,8 @@ button{
 }
 #warn{
     display: none;
-    color: red;
+    color:#9D2626;
 }
 #log_warn,#log_warns{
-    color: red;
+    color:#9D2626;
 }

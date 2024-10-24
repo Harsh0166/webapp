@@ -3,6 +3,15 @@ window.onload=function(){
         location.replace("../../index.html");
     }
     else{
+
+        // logout coding
+        var logout = document.getElementById("logout");
+        logout.onclick = function(){
+            sessionStorage.clear();
+            logout.innerHTML = "Please wait..."
+            setTimeout(function(){location.replace("../../index.html")}, 2000);
+        }
+
         // username coding
         var user_email = sessionStorage.getItem("user");
         var profile_name = document.getElementById("profile_name")
@@ -47,6 +56,7 @@ window.onload=function(){
                 localStorage.setItem( user_email+"image",file_name);
                 var container = document.getElementById("container");
                 container.style.display="none";
+                window.location = location.href;
         }
         }
         
