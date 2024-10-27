@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="design">
+        <div id="profile_img"></div>
+
+    </div>
+    <i class="fa-solid fa-circle-plus " id="add_icon"></i>
+    <div id="contact_box_bg">
+        <center>
+            <div id="contact_box">
+                <h1>Add New Contact</h1>
+                <input type="text" placeholder="Enter Name" name="contact_name" id="contact_name">
+                <input type="number" placeholder="Enter Mobile No." name="mob" id="mob">
+                <center>
+                    <button id="add">Add</button>
+                    <button id="close">Close</button>
+                </center>
+            </div>
+        </center>
+    </div>
+
+    <div id="show_contact">
+        <div id="contact_header">
+            <h1><i class="fa-solid fa-address-book"></i> All Contact</h1>
+            <input type="text" placeholder="search" id="search_contact">
+        </div>
+        <div id="all_contact">
+
+        </div>
+    </div>
+
+    <script src="../js/contact.js"></script>
+</body>
+</html>

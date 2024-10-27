@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+    background-color:#D3C5E5;
+    display: flex;
+    justify-content: center;
+}
+.design{
+    width: 200px;
+    height: 200px;
+    background-color: #735DA5;
+    rotate: 45deg;
+    position: fixed;
+    top: -100px;
+    left: -100px;
+}
+#profile_img{
+    width: 110px;
+    height: 110px;
+    border: 5px solid white;
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+    top: 50px;
+    left: 150px;
+}
+#contact_box_bg{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    display: none;
+}
+
+#contact_box{
+    width: 500px;
+    height: 280px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    margin: 10% 0 0 0 ;
+}
+input{
+    width: 90%;
+    height: 40px;
+    padding: 5px;
+    font-size: 20px;
+    margin: 10px;
+    font: 400 20px ubuntu ;
+    outline: none;
+    border: 2px solid #735DA5;
+    border-left: 5px solid #735DA5;
+}
+button{
+    width: 100px;
+    height: auto;
+    padding: 7px;
+    font: 500 20px ubuntu ;
+    background-color: #735DA5;
+    color: white;
+    cursor: pointer;
+}
+h1{
+    text-align: center;
+    font: 500 35px ubuntu ;
+    color: #735DA5;
+}
+#add_icon{
+    position: fixed;
+    color: #735DA5;
+    font-size: 45px;
+    right: 100px;
+    bottom: 100px;
+    cursor: pointer;
+}
+#show_contact{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px 0 0 0;
+}
+#search_contact{
+    width: 100%;
+    margin: 20px 0;
+}
+#all_contact{
+    width: 100%;
+    height: 100vh;
+    border: 2px solid;
+}
