@@ -67,6 +67,7 @@ add.onclick = function(){
 
                 var contact_name_display = document.createElement("P");
                 contact_name_display.setAttribute("id","contact_name_dis");
+                contact_name_display.setAttribute("class","contact_name_disp");
 
                 var profile_icon = document.createElement("I");
                 profile_icon.setAttribute("class","fa-solid fa-user");
@@ -114,4 +115,20 @@ add.onclick = function(){
         }
     }
     all_contacts();
+
+    var search = document.getElementById("search_contact");
+
+    search.oninput = function(){
+        var all_contact_name = document.getElementsByClassName("contact_name_disp");
+
+        for(i=0;i<all_contact_name.length;i++){
+
+            if(all_contact_name[i].innerHTML.toUpperCase().match(search.value.toUpperCase())){
+                all_contact_name[i].parentElement.style.display="block";
+            }
+            else{
+                all_contact_name[i].parentElement.style.display="none";
+            }
+        }
+    }
 }
