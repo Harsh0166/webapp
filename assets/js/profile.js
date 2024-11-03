@@ -1,4 +1,3 @@
-window.onload=function(){
     if(sessionStorage.getItem("user")== null){
         location.replace("../../index.html");
     }
@@ -59,8 +58,13 @@ window.onload=function(){
                 window.location = location.href;
         }
         }
-        
+     
+        var contact = document.getElementById("contact");
+        contact.onclick = function(){
+            location.replace("../html/contact.html");
+        }
         
     }
-}
+
+
 
