@@ -28,6 +28,7 @@ body{
     position: fixed;
     top: 50px;
     left: 150px;
+    rotate: -45deg;
 }
 #contact_box_bg{
     width: 100%;

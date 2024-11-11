@@ -10,9 +10,19 @@ var back_icon = document.getElementById("back_icon");
 var closes = document.getElementById("close");
 var current_user = sessionStorage.getItem("user");
 
+
+//profile image
+var profile_image = document.getElementById("profile_img");
+var url = localStorage.getItem(current_user+"image");
+profile_image.style.backgroundImage= "url("+url+")";
+profile_image.style.backgroundSize = "cover";
+profile_image.style.backgroundPosition = "center";
+
+
 //open contact box
 add_icon.onclick = function(){
     contact_box_bg.style.display = "block";
+    
 }
 
 //back btn
@@ -76,7 +86,7 @@ add.onclick = function(){
                 contact_tools.setAttribute("id","tools");
                 
                 var contact_edit = document.createElement("I");
-                contact_edit.setAttribute("class","fa-solid fa-pen tool");
+                contact_edit.setAttribute("class","fa-solid fa-pen tool edit");
 
                 var contact_del = document.createElement("I");
                 contact_del.setAttribute("class","fa-solid fa-trash tool del");
@@ -133,7 +143,8 @@ add.onclick = function(){
     }
 
     //delete contact
-    var del = document.getElementsByClassName("del");
+    function del(){
+        var del = document.getElementsByClassName("del");
 
     var i;
     for(i=0;i<del.length;i++){
@@ -150,4 +161,38 @@ add.onclick = function(){
             
         }
     }
+    }
+
+    del();
+
+    //edit contact
+    function edit(){
+        var edit = document.getElementsByClassName("edit");
+        var i;
+        for(i=0;i<edit.length;i++){
+            edit[i].onclick = function(){
+                var parent = this.parentElement.parentElement;
+                var name = parent.getElementsByTagName("P");
+                var user_name = name[0].innerHTML.replace('<i class="fa-solid fa-user"></i>','').trim() ;
+                var user_mob = name[1].innerHTML.replace('<i class="fa-solid fa-mobile-screen"></i>','').trim() ;
+
+                add_icon.click();
+                var contact_name = document.getElementById("contact_name");
+                var mob = document.getElementById("mob");
+                contact_name.value = user_name;
+                mob.value= user_mob;
+
+                var heading = document.getElementsByTagName("H1")[0];
+                heading.innerHTML="Edit Contact";
+
+                add.innerHTML= "Update";
+                
+                localStorage.removeItem(current_user+"_contact"+user_name);
+                closes.style.display="none";
+
+            }
+        }
+
+    }
+    edit();
 }
