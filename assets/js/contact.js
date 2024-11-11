@@ -79,7 +79,7 @@ add.onclick = function(){
                 contact_edit.setAttribute("class","fa-solid fa-pen tool");
 
                 var contact_del = document.createElement("I");
-                contact_del.setAttribute("class","fa-solid fa-trash tool");
+                contact_del.setAttribute("class","fa-solid fa-trash tool del");
                 
                 var line = document.createElement("HR");
 
@@ -129,6 +129,25 @@ add.onclick = function(){
             else{
                 all_contact_name[i].parentElement.style.display="none";
             }
+        }
+    }
+
+    //delete contact
+    var del = document.getElementsByClassName("del");
+
+    var i;
+    for(i=0;i<del.length;i++){
+        del[i].onclick = function(){
+            var parent = this.parentElement.parentElement;
+            var para_element = parent.getElementsByClassName("contact_name_disp")[0];
+            var user_name = para_element.innerHTML.replace('<i class="fa-solid fa-user"></i>','');
+            localStorage.removeItem(current_user+"_contact"+user_name.trim());
+            parent.className= "animate__animated animate__bounceOut";
+
+            setTimeout(function(){
+                parent.remove();},1000
+            )
+            
         }
     }
 }
