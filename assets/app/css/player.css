@@ -40,8 +40,22 @@
     font-family: sans-serif;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-#tools{
+#left_btn,#right_btn,#play{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+#time{
+    margin: 0px 20px;
+}
+#other_tools{
+    margin: 0 10px;
+    cursor: pointer;
+}
+#other_tools i{
     font-size: 20px;
+    padding: 0 10px;
 }
