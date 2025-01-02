@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#left{
+    width: 75%;
+    height: 100vh;
+    border: 2px solid;
+    float: left;
+}
+
+#right{
+    width: 25%;
+    height: 100vh;
+    border: 2px solid;
+    float: right;
+}
+
+#player{
+    width: 100%;
+}
+
+#controls{
+    width: 100%;
+    height: 9.5vh;
+    background-color: black;
+}
+
+#progress_bar{
+    width: 50%;
+    height: 10px;
+    background-color: #ccc;
+    margin-bottom: 5px;
+}
+
+#controls{
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+#tools{
+    font-size: 20px;
+}
