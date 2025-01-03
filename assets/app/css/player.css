@@ -29,7 +29,7 @@
 }
 
 #progress_bar{
-    width: 50%;
+    /* width: 50%; */
     height: 10px;
     background-color: #ccc;
     margin-bottom: 5px;
