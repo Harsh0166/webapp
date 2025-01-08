@@ -7,7 +7,7 @@
 #left{
     width: 75%;
     height: 100vh;
-    border: 2px solid;
+    /* border: 2px solid; */
     float: left;
 }
 
@@ -58,4 +58,35 @@
 #other_tools i{
     font-size: 20px;
     padding: 0 10px;
+}
+
+.playlist_box{
+    width: 100%;
+    height: 20%;
+    background-color: #ccc;
+    text-align: center;
+    padding: 2rem 0 0 0;
+    position: relative;
+}
+
+.playlist_box h2{
+    font-size: 35px;
+    font-family: sans-serif;
+}
+
+.playlist_box input{
+    width: 80%;
+    height: 2.3rem;
+    font-size: 15px;
+    padding: 5px;
+    outline: none;
+    margin: 1rem 0 0 0;
+}
+.playlist_box i{
+    padding: 3px;
+    border: 2px solid;
+    border-radius: 100% ;
+    position: absolute;
+    top: 2.3rem;
+    right: 2.3rem;
 }
