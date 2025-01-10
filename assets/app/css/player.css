@@ -83,10 +83,37 @@
     margin: 1rem 0 0 0;
 }
 .playlist_box i{
-    padding: 3px;
-    border: 2px solid;
-    border-radius: 100% ;
+    font-size: 1.7rem;
     position: absolute;
     top: 2.3rem;
     right: 2.3rem;
+}
+
+
+#add_box{
+    display: none;
+    width: 80%;
+    height: auto ;
+    background-color: brown;
+    position: absolute;
+    top: 2.3rem;
+    right: 4rem;
+    border-radius: 15px 0 15px 15px;
+} 
+
+#submit_btn{
+    width: 20%;
+    height: 1.8rem;
+    margin: 10px 0 10px 0;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+#add_box h2{
+    color: white;
+    font-size: 1.8rem;
+    margin: 10px 0 0 0;
+}
+#add_btn{
+    cursor: pointer;
 }

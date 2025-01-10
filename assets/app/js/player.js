@@ -30,3 +30,19 @@ player.ontimeupdate = function(){
     progress_bar.style.width = slide_bar +"%";
 
 }
+
+//add playlist
+
+var add_btn = document.getElementById("add_btn");
+var add_box = document.getElementById("add_box");
+add_btn.onclick = function(){
+    if(add_btn.className == "fa-solid fa-circle-plus"){
+        add_box.style.display ="block"
+        debugger;
+        add_btn.className = "fa-solid fa-circle-xmark";
+    }
+    else if(add_btn.className == "fa-solid fa-circle-xmark"){
+        add_box.style.display="none";
+        add_btn.className = "fa-solid fa-circle-plus";
+    }
+}
